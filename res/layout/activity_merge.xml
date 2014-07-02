@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/showing_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+                <TextView android:id="@id/showing_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_merge_showing_text" style="@style/BlackSmallTextStyle" />
+                <TextView android:id="@id/current_match_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/BlackLargeTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/merge_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                <Button android:id="@id/merge_button_top" android:background="@drawable/button_merge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:gravity="center" android:id="@id/merge_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/main_merge_text" style="@style/BlackBoldSmallButtonTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/skip_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="25.0dip" android:layout_toLeftOf="@id/merge_layout">
+                <Button android:id="@id/skip_merge_button_top" android:background="@drawable/button_skip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:gravity="center" android:id="@id/skip_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/main_merge_skip_text" style="@style/BlackBoldSmallButtonTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/reset_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="25.0dip" android:layout_toLeftOf="@id/skip_layout">
+                <Button android:id="@id/reset_merge_button_top" android:background="@drawable/button_undo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:gravity="center" android:id="@id/reset_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/main_merge_reset_text" style="@style/BlackBoldSmallButtonTextStyle" />
+            </LinearLayout>
+            <ImageView android:id="@id/top_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/hr_top" android:layout_below="@id/showing_layout" android:contentDescription="@string/image_description" />
+            <LinearLayout android:orientation="vertical" android:id="@id/contact_names" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/top_divider">
+                <include android:id="@id/contacts_list" layout="@layout/app_checkbox_view" />
+            </LinearLayout>
+            <ImageView android:id="@id/bottom_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/hr_bottom" android:layout_below="@id/contact_names" android:contentDescription="@string/image_description" />
+            <TextView android:gravity="center" android:id="@id/tapfield_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/main_merge_tapfield_text" android:layout_below="@id/bottom_divider" style="@style/BlackItalicSmallTextStyle" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/tapfield_text">
+                <include android:id="@id/contactfields_list" layout="@layout/app_fields_view" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

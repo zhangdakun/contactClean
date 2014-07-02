@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">clean联系人</string>
+    <string name="app_terms_title">Terms of Service</string>
+    <string name="app_terms_message">"Thank you for getting Contact CleanApp!
+Please review the information below before using the app.
+
+"<b>What the application does</b>"
+
+The Contact CleanApp scans through the contacts on your phone and
+- Cleans up “exact” (or similar enough) duplicate contacts automatically
+- Suggests contacts that you might want to merge together (same phone number etc.)
+
+"<b>Your personal data</b>"
+
+By using this app and merging duplicate contacts, your contact list will be altered – i.e. changes you make in this app will be written to the contact list, contacts removed will be deleted in the contact list. By tapping OK and using this app you agree to, and understand, that Tactel can not be held liable for any changes to data in your contact list.
+
+"<b>Feedback</b>"
+
+If you have any comments or questions please send us your feedback to productdevelopment@tactel.se
+
+Thanks for your time and good luck cleaning up!
+/The Contact CleanApp team"</string>
+    <string name="main_cleanup_title">"IS YOUR
+"<b>CONTACT LIST</b>"
+FILLED WITH
+"<b>DUPLICATES?</b></string>
+    <string name="main_cleanup_button_text">"FIND
+THEM"</string>
+    <string name="main_cleanup_footer_text">WITH LOVE FROM</string>
+    <string name="main_cleanup_error_title">Error</string>
+    <string name="main_cleanup_error_message">Unfortunately an error occurred and we could not successfully edit your contacts.</string>
+    <string name="main_merge_tapfield_text">Tap fields or photo to edit</string>
+    <string name="main_merge_showing_text">SHOWING…</string>
+    <string name="main_merge_text">Merge</string>
+    <string name="main_merge_skip_text">Skip</string>
+    <string name="main_merge_reset_text">Undo</string>
+    <string name="main_merge_popuplist_title">Select category</string>
+    <string name="main_merge_progress">Merging…</string>
+    <string name="main_refresh_progress">Refreshing contact information…</string>
+    <string name="photo_pick_text">Choose an image below.</string>
+    <string name="photo_pick_cancel_text">Cancel</string>
+    <string name="finish_title_text">"That's it!"</string>
+    <string name="finish_message_text">"You're done!"</string>
+    <string name="finish_tactel_apps_header">Liked CleanApp?</string>
+    <string name="finish_you_merged">YOU MERGED</string>
+    <string name="finish_auto_merge">AUTO-MERGED</string>
+    <string name="finish_total_merged">TOTAL MERGED</string>
+    <string name="finish_in_contact_book">IN CONTACT LIST</string>
+    <string name="no_duplicates_message">"Your contact list was
+ so pretty we couldn't
+ do a thing to it!"</string>
+    <string name="no_duplicates_explanation">(no duplicates merged)</string>
+    <string name="no_duplicates_tactel_apps_header">However…</string>
+    <string name="no_duplicates_tactel_apps_text">"You'll love our other free apps. Tap here to get them!"</string>
+    <string name="title_merge_activity">MergeActivity</string>
+    <string name="title_finish_activity">FinishActivity</string>
+    <string name="title_photopicking_activity">PhotoPickingActivity</string>
+    <string name="title_noduplicates_activity">NoDuplicatesActivity</string>
+    <string name="please_rate_me_title">Please rate us!</string>
+    <string name="please_rate_me_message">Liked Contact Clean App? Rate it!</string>
+    <string name="image_description">This is an image.</string>
+    <string name="periodic_scan_checkbox_text">Check for duplicates weekly.</string>
+    <string name="periodic_scan_notifcation_title">Duplicates found!</string>
+    <string name="periodic_scan_no_duplicates_title">No new duplicates found!</string>
+    <string name="periodic_scan_notifcation_message">Tap to Clean App!</string>
+    <string name="periodic_scan_automerged_message">%1$d was automerged</string>
+    <string name="periodic_scan_no_duplicates_message">Tap to close</string>
+</resources>

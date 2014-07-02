@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:id="@id/start_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/header_top_margin" android:text="@string/main_cleanup_title" android:layout_alignParentTop="true" style="@style/BlackLargeTextStyle" />
+        <FrameLayout android:id="@id/cleanup_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/main_spaces" android:layout_below="@id/start_text_view" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:id="@id/button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/find_them_button_background" android:contentDescription="@string/image_description" />
+            <se.tactel.contactcleanapp.view.ProgressButtonView android:layout_gravity="center" android:id="@id/cleanup_button" android:background="@drawable/find_them_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_cleanup_button_text" style="@style/WhiteLargeBoldTextStyle" />
+        </FrameLayout>
+        <CheckBox android:id="@id/periodic_scan_checkbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="@dimen/main_spaces" android:layout_marginRight="15.0dip" android:button="@drawable/app_checkable_checkbox" android:text="@string/periodic_scan_checkbox_text" android:layout_below="@id/cleanup_frame" android:layout_centerInParent="true" style="@style/BlackSmallTextStyle" />
+        <TextView android:gravity="center" android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/main_spaces" android:text="@string/main_cleanup_footer_text" android:layout_below="@id/periodic_scan_checkbox" style="@style/GreyFooterTextStyle" />
+        <ImageView android:gravity="center" android:id="@id/footer_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/tactellogo" android:layout_below="@id/footer" android:contentDescription="@string/image_description" />
+    </RelativeLayout>
+</ScrollView>

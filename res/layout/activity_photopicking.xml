@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/photopick_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/photo_pick_text" android:layout_alignParentTop="true" style="@style/BlackItalicSmallTextStyle" />
+    <ImageView android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/hr_bottom" android:layout_below="@id/photopick_text" android:contentDescription="@string/image_description" />
+    <GridView android:gravity="center" android:id="@id/gridview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:stretchMode="spacingWidth" android:columnWidth="80.0dip" android:numColumns="auto_fit" android:layout_below="@id/divider" />
+    <LinearLayout android:orientation="vertical" android:id="@id/skip_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+        <Button android:layout_gravity="center" android:id="@id/cancel_button" android:background="@drawable/button_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:gravity="center" android:id="@id/cancel_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/photo_pick_cancel_text" style="@style/BlackBoldSmallButtonTextStyle" />
+    </LinearLayout>
+</RelativeLayout>

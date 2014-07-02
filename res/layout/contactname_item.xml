@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/icon_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <CheckBox android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="true" android:button="@drawable/app_checkable_checkbox" android:singleLine="true" android:layout_toLeftOf="@id/icon_list" android:layout_alignParentLeft="true" style="@style/BlackNameTextStyle" />
+</RelativeLayout>

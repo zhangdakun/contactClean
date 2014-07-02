@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/noduplicates_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/youredone" android:layout_alignParentTop="true" android:contentDescription="@string/image_description" />
+        <TextView android:gravity="center" android:id="@id/noduplicates_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="@dimen/main_spaces" android:layout_marginRight="20.0dip" android:text="@string/no_duplicates_message" android:layout_below="@id/noduplicates_image" style="@style/BlackBoldLargerTextStyle" />
+        <TextView android:gravity="center" android:id="@id/noduplicates_explanation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/no_duplicates_explanation" android:layout_below="@id/noduplicates_message" style="@style/BlackSmallTextStyle" />
+        <CheckBox android:id="@id/periodic_scan_checkbox" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="@dimen/main_spaces" android:layout_marginRight="15.0dip" android:button="@drawable/app_checkable_checkbox" android:text="@string/periodic_scan_checkbox_text" android:layout_below="@id/noduplicates_explanation" android:layout_centerInParent="true" style="@style/BlackSmallTextStyle" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tactel_section" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="@dimen/main_spaces" android:layout_marginRight="15.0dip" android:layout_below="@id/periodic_scan_checkbox">
+            <ImageView android:id="@id/tactel_apps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phones" android:contentDescription="@string/image_description" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_duplicates_tactel_apps_header" style="@style/BlackBoldSmallTextStyle" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_duplicates_tactel_apps_text" style="@style/BlackSmallTextStyle" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/footer_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/tactel_section">
+            <TextView android:gravity="center" android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/main_cleanup_footer_text" style="@style/GreyFooterTextStyle" />
+            <ImageView android:gravity="center" android:id="@id/footer_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/tactellogo" android:contentDescription="@string/image_description" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

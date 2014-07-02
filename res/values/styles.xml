@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.NoTitleBar" />
+    <style name="BlackBoldTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="BlackBoldLargerTextStyle" parent="@style/BlackBoldTextStyle">
+        <item name="android:textSize">24.0dip</item>
+    </style>
+    <style name="BlackBoldVariableTextStyle" parent="@style/BlackBoldTextStyle">
+        <item name="android:textSize">@dimen/finish_header_text_size</item>
+    </style>
+    <style name="BlackTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="BlackBoldSmallTextStyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="BlackBoldSmallButtonTextStyle" parent="@style/BlackBoldSmallTextStyle">
+        <item name="android:textSize">10.0dip</item>
+    </style>
+    <style name="BlackBoldSmallPhotoTextStyle" parent="@style/BlackBoldSmallTextStyle">
+        <item name="android:textSize">14.0dip</item>
+    </style>
+    <style name="BlackSmallTextStyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="BlackLargeTextStyle" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">32.0dip</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="BlackItalicSmallTextStyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="WhiteLargeBoldTextStyle" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">32.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fff7f2ec</item>
+    </style>
+    <style name="GreyFooterTextStyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#ffc8c4bf</item>
+    </style>
+    <style name="GreyFieldTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+    <style name="GreyDarkFieldTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">#ff222222</item>
+    </style>
+    <style name="BlackNameTextStyle" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">24.0dip</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+</resources>

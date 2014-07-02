@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_top_margin">10.0dip</dimen>
+    <dimen name="finish_header_text_size">28.0dip</dimen>
+    <dimen name="image_view_size">80.0px</dimen>
+    <dimen name="main_spaces">10.0dip</dimen>
+</resources>

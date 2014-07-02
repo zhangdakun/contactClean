@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/youredone_top_section" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentTop="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/youredone_image" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/done_checkmark" android:contentDescription="@string/image_description" />
+            <LinearLayout android:orientation="vertical" android:id="@id/youredone_texts" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:id="@id/youredone_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/finish_title_text" android:includeFontPadding="false" style="@style/BlackBoldVariableTextStyle" />
+                <TextView android:id="@id/youredone_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/finish_message_text" android:includeFontPadding="false" style="@style/BlackBoldVariableTextStyle" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/youredone_result" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="@dimen/main_spaces" android:layout_marginRight="20.0dip" android:layout_below="@id/youredone_top_section">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/upper_left_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:layout_gravity="center" android:id="@id/nbr_you_merged" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" style="@style/BlackLargeTextStyle" />
+                        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/finish_you_merged" style="@style/BlackBoldSmallTextStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/upper_right_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:layout_gravity="center" android:id="@id/nbr_auto_merged" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" style="@style/BlackLargeTextStyle" />
+                        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/finish_auto_merge" style="@style/BlackBoldSmallTextStyle" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#ff888682" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/lower_left_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:layout_gravity="center" android:id="@id/nbr_total_merged" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" style="@style/BlackLargeTextStyle" />
+                        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/finish_total_merged" style="@style/BlackBoldSmallTextStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/lower_right_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:layout_gravity="center" android:id="@id/nbr_total_contacts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" style="@style/BlackLargeTextStyle" />
+                        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/finish_in_contact_book" style="@style/BlackBoldSmallTextStyle" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_gravity="center_horizontal" android:id="@id/vertical_line" android:background="#ff888682" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <ImageView android:id="@id/shadow_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/shadow" android:layout_below="@id/youredone_result" />
+        <CheckBox android:id="@id/periodic_scan_checkbox" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="@dimen/main_spaces" android:layout_marginRight="15.0dip" android:button="@drawable/app_checkable_checkbox" android:text="@string/periodic_scan_checkbox_text" android:layout_below="@id/shadow_image" android:layout_centerInParent="true" style="@style/BlackSmallTextStyle" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tactel_section" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="@dimen/main_spaces" android:layout_marginRight="15.0dip" android:layout_below="@id/periodic_scan_checkbox">
+            <ImageView android:id="@id/tactel_apps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phones" android:contentDescription="@string/image_description" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/finish_tactel_apps_header" style="@style/BlackBoldSmallTextStyle" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_duplicates_tactel_apps_text" style="@style/BlackSmallTextStyle" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/footer_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/tactel_section">
+            <TextView android:gravity="center" android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/main_cleanup_footer_text" style="@style/GreyFooterTextStyle" />
+            <ImageView android:gravity="center" android:id="@id/footer_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/tactellogo" android:contentDescription="@string/image_description" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
